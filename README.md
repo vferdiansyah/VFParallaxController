@@ -1,11 +1,11 @@
 # VFParallaxController
 
-[![CI Status](http://img.shields.io/travis/Veri Ferdiansyah/VFParallaxController.svg?style=flat)](https://travis-ci.org/Veri Ferdiansyah/VFParallaxController)
+[![CI Status](http://img.shields.io/travis/vferdiansyah/VFParallaxController.svg?style=flat)](https://travis-ci.org/vferdiansyah/VFParallaxController)
 [![Version](https://img.shields.io/cocoapods/v/VFParallaxController.svg?style=flat)](http://cocoapods.org/pods/VFParallaxController)
 [![License](https://img.shields.io/cocoapods/l/VFParallaxController.svg?style=flat)](http://cocoapods.org/pods/VFParallaxController)
 [![Platform](https://img.shields.io/cocoapods/p/VFParallaxController.svg?style=flat)](http://cocoapods.org/pods/VFParallaxController)
 
-Create a parallax effect between UITableView and MKMapView. This is a Swift version of [SLParallaxController](https://github.com/StefanLage/SLParallaxController)
+Create a parallax effect between UITableView and MKMapView. This is a Swift version of [SLParallaxController](https://github.com/StefanLage/SLParallaxController).
 
 ## Example
 
@@ -32,7 +32,7 @@ Copy the folder `VFParallaxController` to your project.
 
 ## Usage
 
-`VFParallaxController` is a subclass of `UIViewController`
+`VFParallaxController` is a subclass of `UIViewController`.
 
 ## Author
 
