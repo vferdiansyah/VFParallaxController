@@ -6,19 +6,45 @@
 //  Copyright (c) 2016 Veri Ferdiansyah. All rights reserved.
 //
 
+import MapKit
 import UIKit
+import VFParallaxController
 
-class ViewController: UIViewController {
+class ViewController: VFParallaxController, CLLocationManagerDelegate {
+	var locationManager: CLLocationManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+		locationManager = CLLocationManager()
+		locationManager.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-}
+	override func preferredStatusBarStyle() -> UIStatusBarStyle {
+		return .Default
+	}
 
+	// MARK: - CLLocationManagerDelegate Methods
+
+	func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+		switch status {
+		case .NotDetermined:
+			manager.requestWhenInUseAuthorization()
+			break
+		case .AuthorizedWhenInUse:
+			manager.startUpdatingLocation()
+			break
+		case .AuthorizedAlways:
+			manager.startUpdatingLocation()
+			break
+		case .Restricted:
+			break
+		case .Denied:
+			break
+		}
+	}
+}

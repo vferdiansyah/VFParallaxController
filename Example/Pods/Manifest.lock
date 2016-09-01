@@ -1,0 +1,16 @@
+PODS:
+  - VFParallaxController (1.0.0)
+
+DEPENDENCIES:
+  - VFParallaxController (from `../`)
+
+EXTERNAL SOURCES:
+  VFParallaxController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  VFParallaxController: ebaf27d08b1a0ec5f93e3e66ad5baa6ddcb9d5ba
+
+PODFILE CHECKSUM: c9e5d855bf445b61e01cfdc47776d1179d194497
+
+COCOAPODS: 1.0.1

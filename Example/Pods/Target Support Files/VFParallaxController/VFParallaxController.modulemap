@@ -1,0 +1,6 @@
+framework module VFParallaxController {
+  umbrella header "VFParallaxController-umbrella.h"
+
+  export *
+  module * { export * }
+}

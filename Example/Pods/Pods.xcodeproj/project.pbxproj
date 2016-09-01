@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B5CD2222A1D3DA77DDA1870BD491832 /* VFParallaxController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B596E7317ECD8F5872C0F4CEA6DE493A /* VFParallaxController-dummy.m */; };
+		0D759C8B200735F4ED65BEBF8F84FF13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		17B359C7FCF3D91702A9F31067090AED /* VFParallaxController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7787DFC611BDA3B16AE12CF9B55E7A18 /* VFParallaxController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17D274E37135ACF84AA6FECA5EA756CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		5C60EC50243C870E6A8245405BBB2DF2 /* VFParallaxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81C5B47A8C2881EA8244F3F99467628 /* VFParallaxController.swift */; };
+		8DE77DC720DB16A14F5B0B8D9F715ADE /* Pods-VFParallaxController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79741176DC8F4765035343821F949281 /* Pods-VFParallaxController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DD67CAF1370BF8CBE4CDA86E2F39F90 /* Pods-VFParallaxController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A63940F6696833958F8FB85B5572F0 /* Pods-VFParallaxController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A549227125FD6F1531D7313FDB77418E /* Pods-VFParallaxController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C4F16A8122698896F3BF3726EC9F83 /* Pods-VFParallaxController_Tests-dummy.m */; };
+		CF7B90131B2D359A11A8D3E50AD66F4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F24751A4E091A0C8DC1AEA3E2C452D93 /* Pods-VFParallaxController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8441C16CDF586FC20897766F8767FC4E /* Pods-VFParallaxController_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6469EA1BD29A1F843A418A747E3FD152 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A47B438E64F332EE724EE183A12DAD6A;
+			remoteInfo = VFParallaxController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07C8DCB015B4A446D0276E1E8D0FA213 /* Pods-VFParallaxController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VFParallaxController_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		0FDA37E80B80A720A105EECF4C4F435D /* Pods-VFParallaxController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VFParallaxController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1002CD983962D6AD81ED5DE524EF7F0E /* Pods-VFParallaxController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VFParallaxController_Example-resources.sh"; sourceTree = "<group>"; };
+		16713C3496FD69E2265378AF5B42E57D /* Pods-VFParallaxController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VFParallaxController_Example.modulemap"; sourceTree = "<group>"; };
+		1F37716653B001C7904D76570272FD68 /* Pods-VFParallaxController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VFParallaxController_Tests-resources.sh"; sourceTree = "<group>"; };
+		28022B8FA2B9B1C808C5E57BA1C70F15 /* VFParallaxController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VFParallaxController.xcconfig; sourceTree = "<group>"; };
+		29174245F925A9F9762483D740BB3B44 /* Pods-VFParallaxController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VFParallaxController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		37390FAEDBCCD3AADF3867884B525D6F /* Pods-VFParallaxController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VFParallaxController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3C5FD284982CBE12ABFA46B14A0F1513 /* Pods-VFParallaxController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VFParallaxController_Tests.modulemap"; sourceTree = "<group>"; };
+		55E2923A050FA626C5899D27AB443337 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F4FCFB6BCBCD9B37BA286133E3D1F77 /* Pods-VFParallaxController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VFParallaxController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7787DFC611BDA3B16AE12CF9B55E7A18 /* VFParallaxController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VFParallaxController-umbrella.h"; sourceTree = "<group>"; };
+		79741176DC8F4765035343821F949281 /* Pods-VFParallaxController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VFParallaxController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		8441C16CDF586FC20897766F8767FC4E /* Pods-VFParallaxController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VFParallaxController_Example-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98CA8250E810F8D3F25C8C1480C6F9B6 /* VFParallaxController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = VFParallaxController.modulemap; sourceTree = "<group>"; };
+		A2C4F16A8122698896F3BF3726EC9F83 /* Pods-VFParallaxController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VFParallaxController_Tests-dummy.m"; sourceTree = "<group>"; };
+		A6B8A509E29898F4D46E7560F9937EB4 /* Pods_VFParallaxController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VFParallaxController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A934BBFFCC456B31399599183D242CE5 /* VFParallaxController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VFParallaxController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFD4B64B9102574994029E3C8A367C32 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B58AD043C70067FCEADCD634DF02CD99 /* VFParallaxController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VFParallaxController-prefix.pch"; sourceTree = "<group>"; };
+		B596E7317ECD8F5872C0F4CEA6DE493A /* VFParallaxController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VFParallaxController-dummy.m"; sourceTree = "<group>"; };
+		B91E4A60877C9FB10834A5973C01C816 /* Pods-VFParallaxController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VFParallaxController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BCE9677932435DB2D214FF43DB62B3E6 /* Pods-VFParallaxController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VFParallaxController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C6A63940F6696833958F8FB85B5572F0 /* Pods-VFParallaxController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VFParallaxController_Example-umbrella.h"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF3BD8562CE1C9C7355CA7896234AE5A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D009D204E2E37099D3B03F35ED7C1046 /* Pods_VFParallaxController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VFParallaxController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0894D5DD9683177FFB9023EF6467EB3 /* Pods-VFParallaxController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VFParallaxController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F5D4371347DB28535A8CBC4D584A09D8 /* Pods-VFParallaxController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VFParallaxController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F81C5B47A8C2881EA8244F3F99467628 /* VFParallaxController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VFParallaxController.swift; sourceTree = "<group>"; };
+		FBB0E2FAB295C9BD363B4BACC4A91899 /* Pods-VFParallaxController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VFParallaxController_Example.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E6D492D31A4412023210A4B44E493B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D274E37135ACF84AA6FECA5EA756CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B435CDB96FA29005DAA7571A5DFAC2DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D759C8B200735F4ED65BEBF8F84FF13 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD64989930E9E5B1087B758CE39C28E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7B90131B2D359A11A8D3E50AD66F4C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DB9E4CE2D14178BAF892AB462BA0675 /* Pods-VFParallaxController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				55E2923A050FA626C5899D27AB443337 /* Info.plist */,
+				16713C3496FD69E2265378AF5B42E57D /* Pods-VFParallaxController_Example.modulemap */,
+				F5D4371347DB28535A8CBC4D584A09D8 /* Pods-VFParallaxController_Example-acknowledgements.markdown */,
+				B91E4A60877C9FB10834A5973C01C816 /* Pods-VFParallaxController_Example-acknowledgements.plist */,
+				8441C16CDF586FC20897766F8767FC4E /* Pods-VFParallaxController_Example-dummy.m */,
+				5F4FCFB6BCBCD9B37BA286133E3D1F77 /* Pods-VFParallaxController_Example-frameworks.sh */,
+				1002CD983962D6AD81ED5DE524EF7F0E /* Pods-VFParallaxController_Example-resources.sh */,
+				C6A63940F6696833958F8FB85B5572F0 /* Pods-VFParallaxController_Example-umbrella.h */,
+				E0894D5DD9683177FFB9023EF6467EB3 /* Pods-VFParallaxController_Example.debug.xcconfig */,
+				FBB0E2FAB295C9BD363B4BACC4A91899 /* Pods-VFParallaxController_Example.release.xcconfig */,
+			);
+			name = "Pods-VFParallaxController_Example";
+			path = "Target Support Files/Pods-VFParallaxController_Example";
+			sourceTree = "<group>";
+		};
+		3886B3E6C3B461CEE67138F27413FF17 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F81C5B47A8C2881EA8244F3F99467628 /* VFParallaxController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		72234F0E192BC7DE1BEC1CD4C242AF0C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBD434B3A5D0C3F46DE9D6AA4C7BB8 /* VFParallaxController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				72234F0E192BC7DE1BEC1CD4C242AF0C /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				EEFB65C92D49F1A456980DD890A5DA2A /* Products */,
+				899F21D30708E562E72D7C3E933D3A39 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		899F21D30708E562E72D7C3E933D3A39 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DB9E4CE2D14178BAF892AB462BA0675 /* Pods-VFParallaxController_Example */,
+				AB90B3AC3D6AEE59B5417505E855BFB6 /* Pods-VFParallaxController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9D6A363D94C184EAE3ED12C9E1D83E5D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF3BD8562CE1C9C7355CA7896234AE5A /* Info.plist */,
+				98CA8250E810F8D3F25C8C1480C6F9B6 /* VFParallaxController.modulemap */,
+				28022B8FA2B9B1C808C5E57BA1C70F15 /* VFParallaxController.xcconfig */,
+				B596E7317ECD8F5872C0F4CEA6DE493A /* VFParallaxController-dummy.m */,
+				B58AD043C70067FCEADCD634DF02CD99 /* VFParallaxController-prefix.pch */,
+				7787DFC611BDA3B16AE12CF9B55E7A18 /* VFParallaxController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/VFParallaxController";
+			sourceTree = "<group>";
+		};
+		A4722FB11FF8DA3FC370B3B058F27F1F /* VFParallaxController */ = {
+			isa = PBXGroup;
+			children = (
+				3886B3E6C3B461CEE67138F27413FF17 /* Classes */,
+			);
+			path = VFParallaxController;
+			sourceTree = "<group>";
+		};
+		AB90B3AC3D6AEE59B5417505E855BFB6 /* Pods-VFParallaxController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AFD4B64B9102574994029E3C8A367C32 /* Info.plist */,
+				3C5FD284982CBE12ABFA46B14A0F1513 /* Pods-VFParallaxController_Tests.modulemap */,
+				BCE9677932435DB2D214FF43DB62B3E6 /* Pods-VFParallaxController_Tests-acknowledgements.markdown */,
+				29174245F925A9F9762483D740BB3B44 /* Pods-VFParallaxController_Tests-acknowledgements.plist */,
+				A2C4F16A8122698896F3BF3726EC9F83 /* Pods-VFParallaxController_Tests-dummy.m */,
+				07C8DCB015B4A446D0276E1E8D0FA213 /* Pods-VFParallaxController_Tests-frameworks.sh */,
+				1F37716653B001C7904D76570272FD68 /* Pods-VFParallaxController_Tests-resources.sh */,
+				79741176DC8F4765035343821F949281 /* Pods-VFParallaxController_Tests-umbrella.h */,
+				0FDA37E80B80A720A105EECF4C4F435D /* Pods-VFParallaxController_Tests.debug.xcconfig */,
+				37390FAEDBCCD3AADF3867884B525D6F /* Pods-VFParallaxController_Tests.release.xcconfig */,
+			);
+			name = "Pods-VFParallaxController_Tests";
+			path = "Target Support Files/Pods-VFParallaxController_Tests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6FBD434B3A5D0C3F46DE9D6AA4C7BB8 /* VFParallaxController */ = {
+			isa = PBXGroup;
+			children = (
+				9D6A363D94C184EAE3ED12C9E1D83E5D /* Support Files */,
+				A4722FB11FF8DA3FC370B3B058F27F1F /* VFParallaxController */,
+			);
+			name = VFParallaxController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EEFB65C92D49F1A456980DD890A5DA2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D009D204E2E37099D3B03F35ED7C1046 /* Pods_VFParallaxController_Example.framework */,
+				A6B8A509E29898F4D46E7560F9937EB4 /* Pods_VFParallaxController_Tests.framework */,
+				A934BBFFCC456B31399599183D242CE5 /* VFParallaxController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		44321FBDA8C4084B0A39FDE2F053A285 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DD67CAF1370BF8CBE4CDA86E2F39F90 /* Pods-VFParallaxController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66E0F0770F1F9DCF73DDBE7C54964BE5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B359C7FCF3D91702A9F31067090AED /* VFParallaxController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F30D55782D86B1C8F1B5601C519E05 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE77DC720DB16A14F5B0B8D9F715ADE /* Pods-VFParallaxController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A47B438E64F332EE724EE183A12DAD6A /* VFParallaxController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A3136A8B06F06DAA7ABF4EAF98EA8A /* Build configuration list for PBXNativeTarget "VFParallaxController" */;
+			buildPhases = (
+				B8E8276380219B2E74FD3E80A133AECD /* Sources */,
+				FD64989930E9E5B1087B758CE39C28E9 /* Frameworks */,
+				66E0F0770F1F9DCF73DDBE7C54964BE5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VFParallaxController;
+			productName = VFParallaxController;
+			productReference = A934BBFFCC456B31399599183D242CE5 /* VFParallaxController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC3DBC4EC09F59654CC5262CEE060D93 /* Pods-VFParallaxController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AD54582985BE2E6F002F09192A9A2A1 /* Build configuration list for PBXNativeTarget "Pods-VFParallaxController_Tests" */;
+			buildPhases = (
+				2F03584325968A320694B6E9D6E9B6B8 /* Sources */,
+				8E6D492D31A4412023210A4B44E493B0 /* Frameworks */,
+				B7F30D55782D86B1C8F1B5601C519E05 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-VFParallaxController_Tests";
+			productName = "Pods-VFParallaxController_Tests";
+			productReference = A6B8A509E29898F4D46E7560F9937EB4 /* Pods_VFParallaxController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CB6DD56DF843CBBBCE387580C8EF4B6A /* Pods-VFParallaxController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70E47FE736EF05A38928BEC7992B7BEA /* Build configuration list for PBXNativeTarget "Pods-VFParallaxController_Example" */;
+			buildPhases = (
+				6A5E6A1D04A38CE6C5E651E44B944845 /* Sources */,
+				B435CDB96FA29005DAA7571A5DFAC2DB /* Frameworks */,
+				44321FBDA8C4084B0A39FDE2F053A285 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C726618FC63403AA7880B0216E621F0 /* PBXTargetDependency */,
+			);
+			name = "Pods-VFParallaxController_Example";
+			productName = "Pods-VFParallaxController_Example";
+			productReference = D009D204E2E37099D3B03F35ED7C1046 /* Pods_VFParallaxController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EEFB65C92D49F1A456980DD890A5DA2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB6DD56DF843CBBBCE387580C8EF4B6A /* Pods-VFParallaxController_Example */,
+				AC3DBC4EC09F59654CC5262CEE060D93 /* Pods-VFParallaxController_Tests */,
+				A47B438E64F332EE724EE183A12DAD6A /* VFParallaxController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F03584325968A320694B6E9D6E9B6B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A549227125FD6F1531D7313FDB77418E /* Pods-VFParallaxController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A5E6A1D04A38CE6C5E651E44B944845 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24751A4E091A0C8DC1AEA3E2C452D93 /* Pods-VFParallaxController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E8276380219B2E74FD3E80A133AECD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B5CD2222A1D3DA77DDA1870BD491832 /* VFParallaxController-dummy.m in Sources */,
+				5C60EC50243C870E6A8245405BBB2DF2 /* VFParallaxController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C726618FC63403AA7880B0216E621F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VFParallaxController;
+			target = A47B438E64F332EE724EE183A12DAD6A /* VFParallaxController */;
+			targetProxy = 6469EA1BD29A1F843A418A747E3FD152 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04E56A21C6F91F5A06C5897E6F820F6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37390FAEDBCCD3AADF3867884B525D6F /* Pods-VFParallaxController_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VFParallaxController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VFParallaxController_Tests/Pods-VFParallaxController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VFParallaxController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1A3AED72556E9F90591DE49D9E952DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBB0E2FAB295C9BD363B4BACC4A91899 /* Pods-VFParallaxController_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VFParallaxController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VFParallaxController_Example/Pods-VFParallaxController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VFParallaxController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		321B0AE055E6DF4A0E5439754901AB77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FDA37E80B80A720A105EECF4C4F435D /* Pods-VFParallaxController_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VFParallaxController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VFParallaxController_Tests/Pods-VFParallaxController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VFParallaxController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		42ECFB2B88150EC2C8F4FCA4855A3EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28022B8FA2B9B1C808C5E57BA1C70F15 /* VFParallaxController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VFParallaxController/VFParallaxController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VFParallaxController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VFParallaxController/VFParallaxController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = VFParallaxController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		533CE6280F1FDBE292D0C3C620B51833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0894D5DD9683177FFB9023EF6467EB3 /* Pods-VFParallaxController_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VFParallaxController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VFParallaxController_Example/Pods-VFParallaxController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VFParallaxController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8892533124E8095F472752F70A25C455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28022B8FA2B9B1C808C5E57BA1C70F15 /* VFParallaxController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VFParallaxController/VFParallaxController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VFParallaxController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VFParallaxController/VFParallaxController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = VFParallaxController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00A3136A8B06F06DAA7ABF4EAF98EA8A /* Build configuration list for PBXNativeTarget "VFParallaxController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42ECFB2B88150EC2C8F4FCA4855A3EBE /* Debug */,
+				8892533124E8095F472752F70A25C455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AD54582985BE2E6F002F09192A9A2A1 /* Build configuration list for PBXNativeTarget "Pods-VFParallaxController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				321B0AE055E6DF4A0E5439754901AB77 /* Debug */,
+				04E56A21C6F91F5A06C5897E6F820F6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70E47FE736EF05A38928BEC7992B7BEA /* Build configuration list for PBXNativeTarget "Pods-VFParallaxController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533CE6280F1FDBE292D0C3C620B51833 /* Debug */,
+				1A3AED72556E9F90591DE49D9E952DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
