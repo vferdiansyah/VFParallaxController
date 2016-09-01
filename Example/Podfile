@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'VFParallaxController_Example' do
+  pod 'VFParallaxController', :path => '../'
+
+  target 'VFParallaxController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
