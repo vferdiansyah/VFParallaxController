@@ -9,19 +9,19 @@
 import MapKit
 import UIKit
 
-let kScreenHeightWithoutStatusBar = UIScreen.mainScreen().bounds.size.height - 20
-let kScreenWidth = UIScreen.mainScreen().bounds.size.width
+let kScreenHeightWithoutStatusBar = UIScreen.main.bounds.size.height - 20
+let kScreenWidth = UIScreen.main.bounds.size.width
 let kStatusBarHeight = 20
 let kYDownTableView = kScreenHeightWithoutStatusBar - 40
 let kDefaultHeaderHeight = 100.0
 let kMinHeaderHeight = 10.0
-let kDefaultYOffset = (UIScreen.mainScreen().bounds.size.height == 480.0) ? -200.0 : -250.0
+let kDefaultYOffset = (UIScreen.main.bounds.size.height == 480.0) ? -200.0 : -250.0
 let kFullYOffset = -200.0
 let kMinYOffsetToReach = -30
 let kOpenShutterLatitudeMinus = 0.005
 let kCloseShutterLatitudeMinus = 0.018
 
-public class VFParallaxController: UIViewController, UITableViewDelegate, UITableViewDataSource, MKMapViewDelegate, UIGestureRecognizerDelegate {
+open class VFParallaxController: UIViewController, UITableViewDelegate, UITableViewDataSource, MKMapViewDelegate, UIGestureRecognizerDelegate {
 	var tableView: UITableView!
 	var mapView: MKMapView!
 	var mapViewTappedGesture: UITapGestureRecognizer!
@@ -32,21 +32,21 @@ public class VFParallaxController: UIViewController, UITableViewDelegate, UITabl
 
 	// MARK: - Initializers
 
-	override public func viewDidLoad() {
+	override open func viewDidLoad() {
 		super.viewDidLoad()
 
 		setupTableView()
 		setupMapView()
 	}
 
-	override public func didReceiveMemoryWarning() {
+	override open func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 	}
 
 	func setupTableView() {
-		tableView = UITableView.init(frame: CGRectMake(0, 20, CGFloat(kScreenWidth), CGFloat(kScreenHeightWithoutStatusBar)))
-		tableView.tableHeaderView = UIView.init(frame: CGRectMake(0, 0, view.frame.size.width, CGFloat(kDefaultHeaderHeight)))
-		tableView.backgroundColor = UIColor.clearColor()
+		tableView = UITableView.init(frame: CGRect(x: 0, y: 20, width: CGFloat(kScreenWidth), height: CGFloat(kScreenHeightWithoutStatusBar)))
+		tableView.tableHeaderView = UIView.init(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: CGFloat(kDefaultHeaderHeight)))
+		tableView.backgroundColor = UIColor.clear
 
 		mapViewTappedGesture = UITapGestureRecognizer.init(target: self, action: #selector(mapViewTappedHandler))
 		tableViewTappedGesture = UITapGestureRecognizer.init(target: self, action: #selector(tableViewTappedHandler))
@@ -62,7 +62,7 @@ public class VFParallaxController: UIViewController, UITableViewDelegate, UITabl
 	}
 
 	func setupMapView() {
-		mapView = MKMapView.init(frame: CGRectMake(0, CGFloat(kDefaultYOffset), CGFloat(kScreenWidth), CGFloat(kScreenHeightWithoutStatusBar)))
+		mapView = MKMapView.init(frame: CGRect(x: 0, y: CGFloat(kDefaultYOffset), width: CGFloat(kScreenWidth), height: CGFloat(kScreenHeightWithoutStatusBar)))
 		mapView.showsUserLocation = true
 		mapView.delegate = self
 		self.view.insertSubview(mapView, belowSubview: tableView)
@@ -70,26 +70,26 @@ public class VFParallaxController: UIViewController, UITableViewDelegate, UITabl
 
 	// MARK: - Internal Methods
 
-	@objc func mapViewTappedHandler(gesture: UIGestureRecognizer) -> Void {
+	@objc func mapViewTappedHandler(_ gesture: UIGestureRecognizer) -> Void {
 		if (!isShutterOpened) {
 			openShutter()
 		}
 	}
 
-	@objc func tableViewTappedHandler(gesture: UIGestureRecognizer) -> Void {
+	@objc func tableViewTappedHandler(_ gesture: UIGestureRecognizer) -> Void {
 		if (isShutterOpened) {
 			closeShutter()
 		}
 	}
 
 	func openShutter() {
-		UIView.animateWithDuration(0.2, delay: 0.1, options: .CurveEaseOut, animations: {
-			self.tableView.tableHeaderView = UIView.init(frame: CGRectMake(0, 0, self.view.frame.size.width, CGFloat(kMinHeaderHeight)))
-			self.tableView.frame = CGRectMake(0, CGFloat(kYDownTableView), self.tableView.frame.size.width, self.tableView.frame.size.height)
-			self.mapView.frame = CGRectMake(0, CGFloat(kFullYOffset), self.mapView.frame.size.width, CGFloat(self.mapHeight))
+		UIView.animate(withDuration: 0.2, delay: 0.1, options: .curveEaseOut, animations: {
+			self.tableView.tableHeaderView = UIView.init(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: CGFloat(kMinHeaderHeight)))
+			self.tableView.frame = CGRect(x: 0, y: CGFloat(kYDownTableView), width: self.tableView.frame.size.width, height: self.tableView.frame.size.height)
+			self.mapView.frame = CGRect(x: 0, y: CGFloat(kFullYOffset), width: self.mapView.frame.size.width, height: CGFloat(self.mapHeight))
 			}) { (finished) in
 				self.tableView.allowsSelection = false
-				self.tableView.scrollEnabled = false
+				self.tableView.isScrollEnabled = false
 				self.isShutterOpened = true
 
 				self.zoomToUserLocation(self.mapView.userLocation, minLatitude: kOpenShutterLatitudeMinus, animated: true)
@@ -97,20 +97,20 @@ public class VFParallaxController: UIViewController, UITableViewDelegate, UITabl
 	}
 
 	func closeShutter() {
-		UIView.animateWithDuration(0.2, delay: 0.1, options: .CurveEaseOut, animations: {
-			self.tableView.tableHeaderView = UIView.init(frame: CGRectMake(0, CGFloat(kDefaultYOffset), self.view.frame.size.width, CGFloat(kDefaultHeaderHeight)))
-			self.tableView.frame = CGRectMake(0, CGFloat(kStatusBarHeight), self.tableView.frame.size.width, self.tableView.frame.size.height)
-			self.mapView.frame = CGRectMake(0, CGFloat(kDefaultYOffset), self.mapView.frame.size.width, CGFloat(kScreenHeightWithoutStatusBar))
+		UIView.animate(withDuration: 0.2, delay: 0.1, options: .curveEaseOut, animations: {
+			self.tableView.tableHeaderView = UIView.init(frame: CGRect(x: 0, y: CGFloat(kDefaultYOffset), width: self.view.frame.size.width, height: CGFloat(kDefaultHeaderHeight)))
+			self.tableView.frame = CGRect(x: 0, y: CGFloat(kStatusBarHeight), width: self.tableView.frame.size.width, height: self.tableView.frame.size.height)
+			self.mapView.frame = CGRect(x: 0, y: CGFloat(kDefaultYOffset), width: self.mapView.frame.size.width, height: CGFloat(kScreenHeightWithoutStatusBar))
 		}) { (finished) in
 			self.tableView.allowsSelection = true
-			self.tableView.scrollEnabled = true
+			self.tableView.isScrollEnabled = true
 			self.isShutterOpened = false
 
 			self.zoomToUserLocation(self.mapView.userLocation, minLatitude: kCloseShutterLatitudeMinus, animated: true)
 		}
 	}
 
-	func zoomToUserLocation(userLocation: MKUserLocation, minLatitude: Double, animated: Bool) {
+	func zoomToUserLocation(_ userLocation: MKUserLocation, minLatitude: Double, animated: Bool) {
 		if (userLocation.isEqual(nil)) {
 			return
 		}
@@ -125,7 +125,7 @@ public class VFParallaxController: UIViewController, UITableViewDelegate, UITabl
 
 	// MARK: - UITableViewDelegate Methods
 
-	public func scrollViewDidScroll(scrollView: UIScrollView) {
+	open func scrollViewDidScroll(_ scrollView: UIScrollView) {
 		let scrollOffset = scrollView.contentOffset.y
 		var mapViewHeaderFrame = mapView.frame
 
@@ -148,7 +148,7 @@ public class VFParallaxController: UIViewController, UITableViewDelegate, UITabl
 		}
 	}
 
-	public func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+	open func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
 		if (isMapDisplayed) {
 			openShutter()
 		}
@@ -156,29 +156,29 @@ public class VFParallaxController: UIViewController, UITableViewDelegate, UITabl
 
 	// MARK: - UITableViewDataSource Methods
 
-	public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+	open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return 20
 	}
 
-	public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+	open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		var cell: UITableViewCell = UITableViewCell()
 
 		if (indexPath.row == 0) {
 			if (cell.isEqual(nil)) {
-				cell = UITableViewCell.init(style: .Default, reuseIdentifier: "firstCell")
+				cell = UITableViewCell.init(style: .default, reuseIdentifier: "firstCell")
 
 				let cellBounds = cell.layer.bounds
-				let shadowFrame = CGRectMake(cellBounds.origin.x, cellBounds.origin.y, tableView.frame.size.width, 10.0)
-				let shadowPath = UIBezierPath.init(rect: shadowFrame).CGPath
+				let shadowFrame = CGRect(x: cellBounds.origin.x, y: cellBounds.origin.y, width: tableView.frame.size.width, height: 10.0)
+				let shadowPath = UIBezierPath.init(rect: shadowFrame).cgPath
 
 				cell.layer.shadowPath = shadowPath
 				cell.layer.shadowOffset = CGSize(width: -2, height: -2)
-				cell.layer.shadowColor = UIColor.grayColor().CGColor
+				cell.layer.shadowColor = UIColor.gray.cgColor
 				cell.layer.shadowOpacity = 0.75
 			}
 		} else {
 			if (cell.isEqual(nil)) {
-				cell = UITableViewCell.init(style: .Default, reuseIdentifier: "otherCell")
+				cell = UITableViewCell.init(style: .default, reuseIdentifier: "otherCell")
 			}
 		}
 
@@ -187,8 +187,8 @@ public class VFParallaxController: UIViewController, UITableViewDelegate, UITabl
 		return cell
 	}
 
-	public func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-		let totalRow = tableView.numberOfRowsInSection(indexPath.section)
+	open func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+		let totalRow = tableView.numberOfRows(inSection: indexPath.section)
 
 		if (indexPath.row == totalRow - 1) {
 			let cellsHeight = CGFloat(totalRow) * cell.frame.size.height
@@ -196,15 +196,15 @@ public class VFParallaxController: UIViewController, UITableViewDelegate, UITabl
 
 			if ((cellsHeight - tableView.frame.origin.y) < tableHeight) {
 				let footerHeight = tableHeight - cellsHeight
-				tableView.tableFooterView = UIView.init(frame: CGRectMake(0, 0, CGFloat(kScreenWidth), footerHeight))
-				tableView.tableFooterView?.backgroundColor = UIColor.whiteColor()
+				tableView.tableFooterView = UIView.init(frame: CGRect(x: 0, y: 0, width: CGFloat(kScreenWidth), height: footerHeight))
+				tableView.tableFooterView?.backgroundColor = UIColor.white
 			}
 		}
 	}
 
 	// MARK: - MKMapViewDelegate Methods
 
-	public func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
+	open func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
 		if (isShutterOpened) {
 			zoomToUserLocation(mapView.userLocation, minLatitude: kOpenShutterLatitudeMinus, animated: true)
 		} else {
@@ -214,7 +214,7 @@ public class VFParallaxController: UIViewController, UITableViewDelegate, UITabl
 
 	// MARK: - UIGestureRecognizerDelegate Methods
 
-	public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
+	open func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
 		if (gestureRecognizer == tableViewTappedGesture) {
 			return isShutterOpened
 		}

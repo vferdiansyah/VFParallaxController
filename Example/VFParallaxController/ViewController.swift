@@ -24,26 +24,26 @@ class ViewController: VFParallaxController, CLLocationManagerDelegate {
         super.didReceiveMemoryWarning()
     }
 
-	override func preferredStatusBarStyle() -> UIStatusBarStyle {
-		return .Default
+	override var preferredStatusBarStyle : UIStatusBarStyle {
+		return .default
 	}
 
 	// MARK: - CLLocationManagerDelegate Methods
 
-	func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+	func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
 		switch status {
-		case .NotDetermined:
+		case .notDetermined:
 			manager.requestWhenInUseAuthorization()
 			break
-		case .AuthorizedWhenInUse:
+		case .authorizedWhenInUse:
 			manager.startUpdatingLocation()
 			break
-		case .AuthorizedAlways:
+		case .authorizedAlways:
 			manager.startUpdatingLocation()
 			break
-		case .Restricted:
+		case .restricted:
 			break
-		case .Denied:
+		case .denied:
 			break
 		}
 	}
